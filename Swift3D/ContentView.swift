@@ -6,16 +6,14 @@
 //
 
 import SwiftUI
-
+import SceneKit
 struct ContentView: View {
+    
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world3!")
-        }
-        .padding()
+        Flip3D(scene: Flip3D.boxScene,options: [.setCamera])
+            
     }
 }
 
